@@ -1,0 +1,46 @@
+img {
+    width: 100px;
+    height: 100px;
+    border-style: hidden;
+    border-radius: 40px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+h2 {
+    font-family:'Poppins',sans-serif;
+    margin-top: 30px;
+  
+}
+p {
+    font-size: 0.9rem;
+     margin-top: 60px;
+    margin-left: -100px;
+
+}
+div {
+    display: flex;
+    gap: 20px;
+}
+#maram {
+    text-align: center;
+    margin: auto;
+    max-width: 350px;
+}
+#button {
+      margin-top: 85px;
+    margin-left: -130px;
+    background-color: slateblue;
+    color: white;
+    font-size: 1rem;
+    border-style: hidden;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+#button:hover{
+    background-color: cornflowerblue;
+    color:azure;
+    transform: scale(1.05); 
+}
+
