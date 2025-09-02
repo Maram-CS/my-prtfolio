@@ -1,3 +1,8 @@
+body {
+  margin: auto;
+  padding: auto;
+  width: 100%;
+}
 img {
     width: 150px;
     height: 150px;
@@ -5,6 +10,7 @@ img {
     border-radius: 20px;
     margin-top: 20px;
     margin-left: -5px;
+    box-shadow: 0px 8px 24px rgba(0,0,0 ,1);
 }
 
 h2 {
@@ -20,10 +26,11 @@ p {
     color: white;
 
 }
-div {
+#header div {
     display: flex;
     gap: 20px;
 }
+
 #maram {
     text-align: center;
     margin: auto;
@@ -40,6 +47,8 @@ div {
     padding: 5px;
     cursor: pointer;
     text-decoration: none;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
    
 }
 #button:hover{
@@ -90,6 +99,8 @@ body {
     color: #082c38;
     border-radius: 5px;
     margin-left: 60px;
+    box-shadow: 0px 8px 24px rgba(0,0,0,0.5 );
+    cursor: pointer;
 }
 #projectsBtn:hover {
     background-color: #c19976;
@@ -109,12 +120,81 @@ body {
 
 #ProductDB {
     display: block;
+    margin-left: 70px;
 }
 
-/* CSS ديالك الأصلي */
+#miniStor {
+  display: block;
+  margin-right: 40px;
+}
 
-/* ========== Responsive ========== */
-/* Responsive */
+#miniStorP {
+  margin-left: 20px;
+  margin-top: 19px;
+}
+
+#myForm {
+  margin-left:200px;
+  display: flex;
+  gap: 20px;
+  
+}
+
+input {
+  font-size: 20px;
+  border-style: initial;
+  border-style: hidden;
+  border-radius: 5px;
+  padding: 5px;
+  padding-left: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+#btn {
+  background-color: #fcd8b4;
+  color: #082c38;
+  cursor: pointer;
+}
+
+#btn:hover {
+  background-color:#c19976;
+  color: white;
+}
+
+
+
+footer {
+  background-color: #F4F7F8;
+  text-align: center; 
+  width: 100%;           /* مش 100vw باش ما يديرش scroll أفقي */
+  padding: 20px 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  max-width: 100%;
+}
+
+
+#FooterP {
+ font-size: 14px;
+ color: #555;
+ margin-top: 20px;
+ margin: auto;
+ 
+}
+ 
+h3 {
+  color: #d8973c;
+}
+
+#DivFooter {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+}
+
+
 @media (max-width: 768px) {
   /* نخلي كلشي يتراص تحت بعض */
   div {
@@ -122,6 +202,15 @@ body {
     align-items: center;
     text-align: center;
   }
+  img {
+    width: 150px;
+    height: auto;
+    border-style: hidden;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: -5px;
+    box-shadow: 0px 8px 24px rgba(0,0,0 ,1);
+}
 
   #maram {
     max-width: 100%;
@@ -133,8 +222,12 @@ body {
     text-align: center;
   }
 
+  #about-me {
+    margin: 10px 120px 10px 100px;/*10 0*/
+    text-align: center;
+  }
   p {
-    margin: 10px 0;
+    margin: 10px 0px;
     text-align: center;
   }
 
@@ -145,8 +238,7 @@ body {
   #button {
     margin: 20px 0 0 0;
   }
-
-  /* المشاريع (ProductDB / NoteDB) يكونو تحت بعض */
+  
   #projects {
     flex-direction: column;
     gap: 40px;
@@ -154,18 +246,29 @@ body {
   }
 
   #noteDB, 
-  #ProductDB {
+  #ProductDB,
+  #miniStor {
     margin: 0 auto;
     text-align: center;
   }
 
   /* نخلي النصوص فالوسط */
   #noteDBp, 
-  #productDBp {
+  #productDBp,
+  #miniStorP {
     margin: 10px 0 0 0;
     text-align: center;
   }
 
+  #myForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin: auto;
+    overflow: hidden;
+  }
+ 
   #projectsBtn {
     margin: 15px 0 0 0;
   }
@@ -173,4 +276,21 @@ body {
   #noteimg {
     margin: 0 auto;
   }
+
+  #DivFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  font-size: 10px;
 }
+
+
+
+
+
+
+
+}
+
+

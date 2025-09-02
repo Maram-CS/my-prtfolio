@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<header id="header">
+    <div id="maram">
+    <img src="/img/portfolioIMG.jpg" alt="portfolio image">
+    <div id="myinfo">
+    <h2>Maram</h2>
+    <p>Web Developer | Back-end Junior Developer | SoftWare Engineer Student</p>
+       <a href="mailto:berrahalmaram5@gmail.com"><button id="button"  value="Contact Me">Contact Me</button></a>
+     </div>
+     </div>
+</header>
+<br><br>
+<span>
+<h2>About Me</h2>
+    <br>
+    <p id="about-me">Hi! I'm Maram, a web developer with a strong focus on back-end development.<br> I enjoy building robust and scalable server-side applications using Node.js, Express.js, and MongoDB.<br> I work with the MVC architecture to keep my projects clean and maintainable, and I use Postman to test and debug APIs effectively.<br>
+While my main strength is in back-end development<br> I also have experience with HTML, CSS, and JavaScript to build responsive and functional front-end interfaces when needed.<br> I'm passionate about solving problems, learning new technologies, and creating applications that truly deliver value.</p>
+<!--<a href="https://github.com/Maram-CS" target="_blank">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" 
+       alt="GitHub" 
+       width="40" 
+       height="40"/>
+</a>-->
+
+<h2>My Projects</h2>
+<section id="projects">
+    <div id="noteDB">
+       <img id="noteimg" src="/img/noteDB.png" alt="noteBD">
+    <p id="noteDBp">A backend application built with Node.js, Express,<br> and MongoDB that includes a login system using bcrypt.<br> It provides CRUD operations for managing notes<br> while ensuring secure user authentication</p>
+    <a href="http://github.com/Maram-CS/NoteDB"><button id="projectsBtn">githubCode</button></a>
+   </div>
+   <div id="ProductDB">
+    <img src="/img/productimg.png" alt="productDB">
+    <p id="productDBp">A backend API built with Express.js, Node.js,<br> and MongoDB, featuring full CRUD for product management<br>and user authentication with password hashing using bcrypt.</p>
+    <a href="http://github.com/Maram-CS/ProductDB"><button id="projectsBtn">githubCode</button></a>
+   </div>
+   <div id="miniStor">
+    <img src="/img/mini stor.png" alt="miniStorImg">
+    <p id="miniStorP">A full-stack e-commerce platform<br>with a responsive front-end<br>and a Node.js/Express back-end.<br> Features include authentication<br> with bcrypt & JWT, product and cart management,<br> and MongoDB integration</p>
+    <a href="http://github.com/Maram-CS/trendWearStor"><button id="projectsBtn">githubCode</button></a>
+   </div>
+</section>
+<h2>Certificates</h2>
+
+<h2>Contact</h2>
+<br>
+<form id="myForm" action="/api/App/add"   method="post">
+    <input id="name" type="text" placeholder="userName" required name="userName"><!--name lazm ykoun nafs ism var f schema ta3i-->
+    <input id="email" type="email" placeholder="userName@gmail.com" required name="email">
+    <input id="message" type="text" placeholder="message" required name="message">
+    <input id="btn" type="submit" value="send">
+</form>
+</span> <br><br>
+
+<footer>
+    <h3>For More Information</h3> <br>
+    <p id="FooterP">here you can find everything about me</p><br>
+    <div id="DivFooter">
+    <a href="http://github.com/Maram-CS" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="githubLogo" > </a>
+    <a href="https://www.linkedin.com/in/maram-berrahal-5a7737373" target="_blank"><img id="imgF" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Logo" ></a>
+    <a href="https://www.facebook.com/share/17CgsdXVcr/" target="_blank"><img id="imgF" src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook Logo"  ></a>
+    </div>
+</footer>
+
+    
+
+
+</body>
+</html>
