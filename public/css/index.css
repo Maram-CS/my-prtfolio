@@ -194,6 +194,146 @@ h3 {
   justify-content: center;
 }
 
+#certificate {
+  display: flex;
+  gap: 50px;
+  margin-left: 160px;
+}
+ .front-end {
+      margin: 10px 0;
+      border-style: hidden;
+      max-width: 400px;
+      background-color :#011638;
+      margin-left: 200px;
+      border-radius: 10px;
+      box-shadow: 0px 8px 24px rgba(0,0,0 ,1);
+      cursor: pointer;
+    }
+
+    .skill-name {
+      font-weight: bold;
+      margin-bottom: 5px;
+      color :#FFFFFF;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      margin-left: 10px;
+    }
+
+    .bar {
+      background: #edd3ad;
+      border-radius: 10px;
+      overflow: hidden;
+      height: 10px;
+      width: 350px;/* تقدر تغيّر العرض */
+    }
+    .fill-html {
+      height: 100%;
+      width: 80%; /* النسبة */
+      background: #F59E0B; /* اللون */
+      text-align: right;
+      color: #fff;
+      padding-right: 5px;
+      line-height: 10px;
+    }
+
+    .fill-css {
+      height: 100%;
+      width: 60%; /* النسبة */
+      background: #F59E0B; /* اللون */
+      text-align: right;
+      color: #fff;
+      padding-right: 5px;
+      line-height: 10px;
+    }
+       .fill-js {
+      height: 100%;
+      width: 70%; /* النسبة */
+      background: #F59E0B; /* اللون */
+      text-align: right;
+      color: #fff;
+      padding-right: 5px;
+      line-height: 10px;
+    }
+    #caption {
+      color:#c19976;
+      text-align: center;
+      padding-top: 10px;
+    }
+
+     .back-end {
+      margin: 10px 0;
+      border-style: hidden;
+      max-width: 400px;
+      background-color :#011638;
+      margin-left: 200px;
+      border-radius: 10px;
+      box-shadow: 0px 8px 24px rgba(0,0,0 ,1);
+      cursor: pointer;
+    }
+     .fill-nodejs {
+      height: 100%;
+      width: 80%; /* النسبة */
+      background: #F59E0B; /* اللون */
+      text-align: right;
+      color: #fff;
+      padding-right: 5px;
+      line-height: 10px;
+    }
+    .fill-api {
+      height: 100%;
+      width: 80%; /* النسبة */
+      background: #F59E0B; /* اللون */
+      text-align: right;
+      color: #fff;
+      padding-right: 5px;
+      line-height: 10px;
+    }
+
+    .fill-expressjs {
+      height: 100%;
+      width: 70%; /* النسبة */
+      background: #F59E0B; /* اللون */
+      text-align: right;
+      color: #fff;
+      padding-right: 5px;
+      line-height: 10px;
+    }
+    .DataBase{
+      margin: 10px 0;
+      border-style: hidden;
+      max-width: 400px;
+      background-color :#011638;
+      margin-left: 200px;
+      border-radius: 10px;
+      box-shadow: 0px 8px 24px rgba(0,0,0 ,1);
+      cursor: pointer;
+      
+    } 
+    .fill-mySql {
+      height: 100%;
+      width: 70%; /* النسبة */
+      background: #F59E0B; /* اللون */
+      text-align: right;
+      color: #fff;
+      padding-right: 5px;
+      line-height: 10px;
+    }
+    .fill-mongoDb {
+      height: 100%;
+      width: 80%; /* النسبة */
+      background: #F59E0B; /* اللون */
+      text-align: right;
+      color: #fff;
+      padding-right: 5px;
+      line-height: 10px;
+    }
+    .rowOne {
+      display: flex;
+      flex-direction: row;
+      gap: 5px;
+    }
+
+
+
 
 @media (max-width: 768px) {
   /* نخلي كلشي يتراص تحت بعض */
@@ -247,7 +387,8 @@ h3 {
 
   #noteDB, 
   #ProductDB,
-  #miniStor {
+  #miniStor,
+  #certificate {
     margin: 0 auto;
     text-align: center;
   }
@@ -283,7 +424,23 @@ h3 {
   gap: 30px;
   justify-content: center;
   font-size: 10px;
+
 }
+  .rowOne,.rowTwo{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      justify-items: center;
+    }
+  .back-end, .front-end,.DataBase {
+    margin: 0 auto;
+    text-align: center;
+  }
+  footer {
+    margin: auto;
+    text-align: center;
+  }
+
 
 
 
