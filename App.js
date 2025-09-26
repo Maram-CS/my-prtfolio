@@ -18,7 +18,7 @@ App.set("views", join(_dirname, "/views"));
 App.use(express.static(join(_dirname, "/public")));
 
 App.use("/api/App",formRouter);
-App.use("/App",AppRouter);
+App.use("/",AppRouter);
 
 App.listen(Port,() => {
     console.log(`server is working on Port :${Port}`);
