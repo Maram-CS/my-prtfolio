@@ -3,11 +3,13 @@ import { config } from "dotenv";
 import express from "express";
 import AppRouter from "./Router/AppRouter.js";
 import {join} from "path";
+import { fileURLToPath } from "url";
 
 
 config ();
 const Port = process.env.PORT || "7000";
-const _dirname = import.meta.dirname;
+const __filename = fileURLToPath(import.meta.url);
+const _dirname = path.dirname(__filename);
 
 const App = express();
 App.use(express.urlencoded({extended : true}));
