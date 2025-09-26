@@ -8,8 +8,7 @@ import { fileURLToPath } from "url";
 
 config ();
 const Port = process.env.PORT || "7000";
-const __filename = fileURLToPath(import.meta.url);
-const _dirname = path.dirname(__filename);
+const _dirname = import.meta.dirname;
 
 const App = express();
 App.use(express.urlencoded({extended : true}));
