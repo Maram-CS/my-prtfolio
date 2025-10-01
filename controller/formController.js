@@ -14,7 +14,7 @@ const register = async (req,res,next) => {
         }else {
             res.status(400).json({message : "sorry you have an wrong someWhere Try again please !" })
         }
-        
+        next();
     }catch (err) {
         console.error(err);
     }
@@ -28,7 +28,7 @@ const deleteForm = async (req,res,next) => {
         }else {
             res.status(400).json({message : "sorry you have an wrong someWhere Try again please !" })
         }
-        
+        next();
     }catch (err) {
         console.error(err);
     }
