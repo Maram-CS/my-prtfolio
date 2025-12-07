@@ -3,7 +3,7 @@ import Config_Db from "../Config/ConfigDb.js";
 import { config } from "dotenv";
 
 config();
-Config_Db(process.env.NAME_DB || "Portfolio_DB");
+Config_Db(process.env.DATABASE_NAME || "Portfolio_DB");
 
 const register = async (req,res,next) => {
     try {
