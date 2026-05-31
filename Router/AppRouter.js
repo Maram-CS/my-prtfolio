@@ -2,7 +2,7 @@ import { Router } from "express";
 
 const AppRouter = Router();
 
-AppRouter.get("/index",(req,res)=>{
+AppRouter.get("/",(req,res)=>{
     res.render("auth/index");
 })
 
